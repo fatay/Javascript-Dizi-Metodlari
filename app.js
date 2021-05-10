@@ -1119,6 +1119,7 @@ let data = [
 //console.log(data);
 
 /***************************** .find() ************************************************/
+// belirli kriteri sağlayan elemanlardan tekil olarak bir tanesini getirir
 
 // id 'si "5e652aa659a9911f63e6e218" olan veriyi getir
 let foundById = null;
@@ -1165,8 +1166,7 @@ let findIndexA = newArr.indexOf("İsmail",3);
 // diziyi filtreler ve çoklu elemanları geri döndürebilir. adı üstünde; filtre.
 let filterByAEG = data.filter(item => item.age > 30 && item.eyeColor == "blue" && item.gender == "female");
 
-// ayrıca filtreleme işleminden sonra yapılacak işlemler devam edecekse;
-// şu şekilde de kullanılabilir;
+// ayrıca filtreleme işleminden sonra yapılacak işlemler devam edecekse; şu şekilde de kullanılabilir;
 
 let filterBy = data.filter(
     item => {
@@ -1259,7 +1259,7 @@ const kisiler = [
 const yirmiYasindanBuyukler = kisiler.every(kisi => kisi.yas >= 20);
 // çıktı: true
 
-/******************************** .sone() *********************************************/
+/******************************** .some() *********************************************/
 /* bir dizinin tüm elemanlarını irdeleyerek belirtilen conditionu sağlayıp-sağlamadığına
 *  bakar. EĞER Kİ BİR ELEMAN BİLE ŞARTI SAĞLARSA TRUE
 *  DEĞİLSE FALSE DÖNDÜRÜR.
